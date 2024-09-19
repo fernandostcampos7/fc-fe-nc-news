@@ -11,7 +11,7 @@ function Navbar () {
 					<Link to='articles-list'>Articles List</Link>
 				</li>
 				<li>
-					<Link></Link>
+					<Link to='article-details'>Article Details</Link>
 				</li>
 				<li>
 					<Link></Link>

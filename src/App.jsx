@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Header from './components/Header';
 import ArticlesList from './components/ArticlesList';
+import ArticleDetails from './components/ArticleDetails'
 
 function App() {
 	// const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='articles-list' element={<ArticlesList/>} />
+				<Route path='article_details' element={<ArticleDetails/>}/>
 			</Routes>
 			<Footer />
 		</div>
