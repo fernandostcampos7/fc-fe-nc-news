@@ -1,20 +1,29 @@
-import { useState } from 'react'
-import {Route, Routes} from 'react-router-dom;'
-import './App.css'
-
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import Header from './components/Header';
+import ArticlesList from './components/ArticlesList';
+import ArticleDetails from './components/ArticleDetails'
 
 function App() {
-  // const [count, setCount] = useState(0)
+	// const [count, setCount] = useState(0)
 
-  return (
-    <div className='app'>
-      <Header/>
-      <Route path='/' element={<Homepage/>}/>
-
-    </div>
-    <Footer/>
-
-  )
+	return (
+		<div className='app'>
+			<Header />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='articles-list' element={<ArticlesList/>} />
+				<Route path='article_details' element={<ArticleDetails/>}/>
+			</Routes>
+			<Footer />
+		</div>
+	);
 }
 
-export default App
+export default App;
+
+
+
+
