@@ -13,9 +13,7 @@ function Navbar () {
 				<li>
 					<Link to='article-details'>Article Details</Link>
 				</li>
-				<li>
-					<Link></Link>
-				</li>
+				
 			</ul>
 		</nav>
 	);

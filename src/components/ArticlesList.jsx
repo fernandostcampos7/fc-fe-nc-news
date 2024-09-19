@@ -29,7 +29,7 @@ function ArticlesList() {
 				<p> Loading Articles ...</p>
 			) : (
 				<div>
-					<p>Display Article</p>
+					<p>Articles Available</p>
 					{articles.map((article) => (
 						<ArticleCard key={article.article_id} article={article} />
 					))}
