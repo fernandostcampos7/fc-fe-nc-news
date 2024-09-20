@@ -22,7 +22,7 @@ function ArticlesList() {
 			})
 			.catch((err) => {
 				console.error('Error fetching articles:', err);
-				setError('Failed to load articles'); // Set an error message
+				setError('Failed to load articles');
 				setLoading(false);
 			});
 	}, []);
@@ -35,7 +35,7 @@ function ArticlesList() {
 					{isLoading ? (
 						<p>Loading Articles...</p>
 					) : error ? (
-						<p>{error}</p> // Display the error message if fetch fails
+						<p>{error}</p> 
 					) : (
 						<div>
 							<p>Articles Available</p>
