@@ -35,7 +35,7 @@ function ArticlesList() {
 					{isLoading ? (
 						<p>Loading Articles...</p>
 					) : error ? (
-						<p>{error}</p> // Display the error message if fetch fails
+						<p>{error}</p> 
 					) : (
 						<div>
 							<p>Articles Available</p>

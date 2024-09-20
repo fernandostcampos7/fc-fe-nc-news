@@ -6,7 +6,7 @@ function ArticleVoting({ initialVotes, articleId }) {
 
 	const handleVote = (change) => {
 		setVotes((prevVotes) => prevVotes + change);
-		setVoteError(null); 
+		setVoteError(null);
 
 		// Make the API request to update the votes
 		fetch(
@@ -27,7 +27,7 @@ function ArticleVoting({ initialVotes, articleId }) {
 			})
 			.catch((error) => {
 				setVoteError('Something went wrong. Please try again.');
-				setVotes((prevVotes) => prevVotes - change); // Revert the optimistic update
+				setVotes((prevVotes) => prevVotes - change); 
 			});
 	};
 
