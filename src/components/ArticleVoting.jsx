@@ -26,7 +26,11 @@ function ArticleVoting({ initialVotes, articleId }) {
 			})
 			.catch((error) => {
 				setVoteError('Something went wrong. Please try again.');
+<<<<<<< HEAD
 				setVotes((prevVotes) => prevVotes - change);
+=======
+				setVotes((prevVotes) => prevVotes - change); 
+>>>>>>> d838a8dd18f7996c070881e903fcaac08a8fc831
 			});
 	};
 
